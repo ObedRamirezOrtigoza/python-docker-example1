@@ -1,3 +1,5 @@
+#This .gitignore file is designed to exclude various files and directories 
+#that are commonly generated during the development  and packaging of Python projects.
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]

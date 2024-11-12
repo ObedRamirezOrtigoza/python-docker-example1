@@ -1,34 +1,56 @@
-# Include any files or directories that you don't want to be copied to your
-# container here (e.g., local build artifacts, temporary files, etc.).
-#
-# For more help, visit the .dockerignore file reference guide at
-# https://docs.docker.com/go/build-context-dockerignore/
+#this file it´s creat for comand >> docker init
 
-**/.DS_Store
 **/__pycache__
+#Excludes Python's __pycache__ directories, which contain bytecode files (.pyc).
 **/.venv
+#Excludes virtual environments created by Python (.venv directory).
 **/.classpath
+# Excludes Eclipse's .classpath file, used to define project classpath settings.
 **/.dockerignore
+#Excludes the .dockerignore file itself.
 **/.env
+#Excludes .env files, commonly used for environment variable settings.
 **/.git
+#Excludes the .git directory, which contains Git version control metadata.
 **/.gitignore
+#Excludes the .gitignore file, which specifies files and directories Git should ignore.
 **/.project
+#Excludes the .project file, typically used by Eclipse to store project settings.
 **/.settings
+#Excludes the .settings directory, typically used by IDEs like Eclipse to store project-specific settings.
 **/.toolstarget
+#Excludes .toolstarget, potentially related to IDE-specific configurations or tools.
 **/.vs
+#Excludes Visual Studio-related files (such as settings or temporary files).
 **/.vscode
+#Excludes Visual Studio Code settings and configuration files.
 **/*.*proj.user
+#Excludes project-specific user files related to project configurations in Visual Studio or other IDEs.
 **/*.dbmdl
+#Excludes database model files, often associated with Visual Studio or database management tools.
 **/*.jfm
-**/bin
-**/charts
+#Excludes files with the .jfm extension, which might be related to specific tools or configurations.
+**/bin 
+#Excludes the bin directory, often containing compiled binaries or executable files.
+**/charts 
+#Excludes the charts directory, which might contain charting or graphing assets.
 **/docker-compose*
+#Excludes any files starting with docker-compose, which are used for multi-container Docker applications.
 **/compose.y*ml
+#Excludes any YAML files related to Docker Compose, with variations in naming (e.g., docker-compose.yml, docker-compose.override.yml).
 **/Dockerfile*
-**/node_modules
+#Excludes Dockerfiles, possibly to avoid including them in the image.
+**/node_modules 
+#Excludes the node_modules directory, which contains dependencies installed by Node.js.
 **/npm-debug.log
+#Excludes the npm-debug.log file, which logs errors and debug information related to npm.
 **/obj
-**/secrets.dev.yaml
+#Excludes the obj directory, often used in C# and .NET projects for temporary object files.
+**/secrets.dev.yaml 
+#Excludes a YAML file potentially containing development secrets.
 **/values.dev.yaml
+#Excludes a YAML file potentially containing configuration values for development.
 LICENSE
+#Excludes the LICENSE file, which contains licensing information.
 README.md
+#Excludes the README.md file, which usually contains project documentation.
